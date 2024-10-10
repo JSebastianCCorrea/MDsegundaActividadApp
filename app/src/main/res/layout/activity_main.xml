@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="Please enter the details below"
+        android:textColor="@color/black"
+
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="390dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_border"
+        android:hint="Contacto"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="397dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_rounded_border"
+        android:hint="Fecha de nacimiento"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="393dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginTop="-609dp"
+        android:background="@drawable/button_rounded_border"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_rounded"
+        android:text="Ingresa nuevos datos"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/button_rounded"
+        android:text="Actualizar datos"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="Eliminar datos"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_rounded"
+        android:text="Visualizar datos"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
